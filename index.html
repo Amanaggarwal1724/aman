@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,27 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <style>
-        .input-body{
+        .input-body {
             width: 540px;
             margin: auto;
             margin-top: 80px;
             padding: 14px;
             box-shadow: 1px 1px 4px 0px #cec6c6;
         }
-        .generatelink{
+        
+        .generatelink {
             width: 600px;
             margin: auto;
             margin-top: 50px;
         }
-        textarea{
+        
+        textarea {
             outline: none;
             box-shadow: none;
         }
     </style>
 </head>
+
 <body>
 
     <div class="container">
@@ -33,19 +37,22 @@
                 <label for="link">Enter Link</label>
                 <textarea class="form-control mb-3" id="link" rows="5"></textarea>
                 <div class="btn btn-primary px-4" onclick="generatelink()">Generate</div>
-              </div>
+            </div>
         </div>
-    
+
         <div class="generatelink">
             <textarea class="form-control mb-3" id="new-link" rows="5" readonly>
     
             </textarea>
-           <div class="btn btn-success px-4" id="copy-text" onclick="copytext()">Copy Link</div>
+            <div class="btn btn-success px-4" id="copy-text" onclick="copytext()">Copy Link</div>
+            <div class="btn btn-danger px-4 ml-3" id="clear-text" onclick="cleardata()">Clear Data</div>
         </div>
+
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
 
 

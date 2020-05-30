@@ -15,3 +15,8 @@ function copytext(){
     textField.select()
     document.execCommand('copy')
 }
+
+function cleardata(){
+    document.getElementById('link').value=""
+    document.getElementById('new-link').innerHTML=""
+}
